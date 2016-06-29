@@ -11,7 +11,7 @@ import React, { PropTypes } from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Contact.css';
 
-const title = 'Contact Us';
+const title = 'Follow Me';
 
 function Contact(props, context) {
   context.setTitle(title);
@@ -19,7 +19,20 @@ function Contact(props, context) {
     <div className={s.root}>
       <div className={s.container}>
         <h1>{title}</h1>
-        <p>...</p>
+        <ul>
+          <li>
+            <a href="https://twitter.com/joonho_cho" target="_blank">Twitter</a>
+          </li>
+          <li>
+            <a href="https://medium.com/@joonhocho" target="_blank">Medium</a>
+          </li>
+          <li>
+            <a href="https://github.com/joonhocho" target="_blank">GitHub</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/joonhocho" target="_blank">LinkedIn</a>
+          </li>
+        </ul>
       </div>
     </div>
   );
